@@ -1,0 +1,36 @@
+2018-12-19 09:03:22,661 [Thread-4:10124] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-19 09:03:22,672 [Thread-4:10124] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-19 09:03:22,679 [Thread-4:10124] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-19 09:03:22,688 [Thread-4:10124] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-19 09:03:23,066 [Thread-2:48672] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2018-12-19 09:47:37,282 [Thread-2:43808] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 21, in index
+    return render(request,'index.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_settings() takes 0 positional arguments but 1 was given
+2018-12-19 09:50:44,254 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-19 09:50:44,266 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-19 09:50:44,277 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-19 09:50:44,287 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-19 09:50:59,109 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-19 09:50:59,118 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-19 09:50:59,126 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-19 09:50:59,134 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg

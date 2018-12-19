@@ -1,0 +1,4 @@
+2018-12-19 09:03:22,467 [Thread-2:48672] [my_blog.views:11] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-19 09:47:37,117 [Thread-2:43808] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-19 09:50:44,181 [Thread-2:42680] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-19 09:50:59,067 [Thread-2:42680] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
