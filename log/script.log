@@ -34,3 +34,297 @@ TypeError: global_settings() takes 0 positional arguments but 1 was given
 2018-12-19 09:50:59,118 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
 2018-12-19 09:50:59,126 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
 2018-12-19 09:50:59,134 [Thread-2:42680] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-19 16:04:12,179 [Thread-5:68492] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-19 16:04:12,183 [Thread-4:12452] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-19 16:04:12,183 [Thread-3:58700] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-19 16:04:12,184 [Thread-2:62240] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-19 16:48:24,441 [Thread-2:64968] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/add/
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\forms.py", line 163, in __getitem__
+    field = self.fields[name]
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "D:\virtualenv\blog\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "D:\virtualenv\blog\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\helpers.py", line 118, in __iter__
+    yield AdminField(self.form, field, is_first=(i == 0))
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\helpers.py", line 130, in __init__
+    self.field = form[field]  # A django.forms.BoundField instance
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\forms.py", line 169, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'title' not found in 'ArticleForm'. Choices are: ."
+2018-12-19 16:48:40,070 [Thread-2:34364] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/add/
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\forms.py", line 163, in __getitem__
+    field = self.fields[name]
+KeyError: 'desc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "D:\virtualenv\blog\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "D:\virtualenv\blog\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\virtualenv\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\virtualenv\blog\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\helpers.py", line 118, in __iter__
+    yield AdminField(self.form, field, is_first=(i == 0))
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\helpers.py", line 130, in __init__
+    self.field = form[field]  # A django.forms.BoundField instance
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\forms.py", line 169, in __getitem__
+    ', '.join(sorted(f for f in self.fields)),
+KeyError: "Key 'desc' not found in 'ArticleForm'. Choices are: title."
+2018-12-19 16:49:40,714 [Thread-2:67456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/add/
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (registration_required, enable_comments, template_name) specified for Article
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1637, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1525, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1554, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 707, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (registration_required, enable_comments, template_name) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2018-12-19 16:50:41,646 [Thread-2:40976] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/add/
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 256, in __new__
+    apply_limit_choices_to=False,
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 149, in fields_for_model
+    f.name, model.__name__)
+django.core.exceptions.FieldError: 'date_publish' cannot be specified for Article model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1637, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1525, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1554, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 707, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: 'date_publish' cannot be specified for Article model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2018-12-19 16:53:03,370 [Thread-2:68532] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/add/
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\virtualenv\blog\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (catagory) specified for Article
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\virtualenv\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1637, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1525, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 1554, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 707, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (catagory) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
