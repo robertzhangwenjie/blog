@@ -13,12 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import django.views.static
+from django.conf import settings
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
+
+from my_blog.upload import upload_image
 from my_blog.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/doc/',include('django.contrib.admindocs.urls')),
     url(r'^$',index,name='index'),
+    url(r"^uploads/(?P<path>.*)$",
+        django.views.static.serve,
+        {"document_root": settings.MEDIA_ROOT,}),
+    url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
 ]

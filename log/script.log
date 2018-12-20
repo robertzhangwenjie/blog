@@ -328,3 +328,7 @@ Traceback (most recent call last):
   File "D:\virtualenv\blog\lib\site-packages\django\contrib\admin\options.py", line 707, in get_form
     % (e, self.__class__.__name__)
 django.core.exceptions.FieldError: Unknown field(s) (catagory) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2018-12-20 05:57:46,653 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-20 05:57:46,663 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-20 05:57:46,682 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-20 05:57:46,697 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
