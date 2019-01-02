@@ -137,19 +137,20 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
 AUTH_USER_MODEL = 'my_blog.User'
 
 # 网站基本信息配置
-SITE_NAME = 'The Personal Blog of Robert'
-SITE_DESC = '专注开发测试，欢迎大家交流!'
+SITE_NAME = "Robert's Blog"
+SITE_DESC = 'Focus on testing technology of software seven years!'
 WEIBO_SINA = 'https://weibo.com/u/2928960587/home'
 WEIBO_TECENT= 'https://weibo.com/u/2928960587/home'
 PRO_RSS = 'https://weibo.com/u/2928960587/home'
 PRO_EMAIL = 'robertzhangwenjie@gmail.com'
+SITE_URL = 'www.hwenip.com'
 
 
 # https://docs.djangoproject.com/en/2.1/topics/logging/
 # 自定义日志输出信息
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': True,
+    'disable_existing_loggers': False,
     'formatters': {
         'standard': {
             'format': '%(asctime)s [%(threadName)s:%(thread)d] [%(name)s:%(lineno)d] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s'}  #日志格式
@@ -204,7 +205,7 @@ LOGGING = {
         'django': {
             'handlers': ['default', 'console'],
             'level': 'DEBUG',
-            'propagate': False
+            'propagate': False,
         },
         'django.request': {
             'handlers': ['request_handler'],

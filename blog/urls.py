@@ -20,13 +20,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 from my_blog.upload import upload_image
-from my_blog.views import index
+from my_blog.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/doc/',include('django.contrib.admindocs.urls')),
-    url(r'^$',index,name='index'),
     url(r"^uploads/(?P<path>.*)$",
         django.views.static.serve,
         {"document_root": settings.MEDIA_ROOT,}),
     url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
+    path(r'',include('my_blog.urls')),
 ]

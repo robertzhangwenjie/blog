@@ -5,6 +5,6 @@ KindEditor.ready(function(K) {
         width:'800px',
         height:'200px',
         // 指定上传图片时所请求的路径
-        uploadjson: '/admin/upload/kindeditor',
+        uploadJson: '/admin/upload/kindeditor',
     });
 });

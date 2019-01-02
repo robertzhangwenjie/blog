@@ -13,6 +13,7 @@ import uuid
 import json
 import datetime as dt
 
+# 不验证csrf
 @csrf_exempt
 def upload_image(request, dir_name):
     ##################

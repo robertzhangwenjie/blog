@@ -332,3 +332,560 @@ django.core.exceptions.FieldError: Unknown field(s) (catagory) specified for Art
 2018-12-20 05:57:46,663 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
 2018-12-20 05:57:46,682 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
 2018-12-20 05:57:46,697 [Thread-6:51936] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-20 21:16:34,736 [Thread-2:12492] [django.request:228] [log:log_response] [WARNING]- Not Found: /hello
+2018-12-20 21:16:34,921 [Thread-2:12492] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2018-12-21 08:18:31,400 [Thread-4:4296] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-21 08:18:31,409 [Thread-4:4296] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-21 08:18:31,419 [Thread-4:4296] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-21 08:18:31,429 [Thread-4:4296] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-21 08:35:19,052 [Thread-2:8320] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a1.jpg
+2018-12-21 08:35:19,067 [Thread-2:8320] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a2.jpg
+2018-12-21 08:35:19,076 [Thread-2:8320] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a3.jpg
+2018-12-21 08:35:19,091 [Thread-2:8320] [django.request:228] [log:log_response] [WARNING]- Not Found: /images/a4.jpg
+2018-12-21 09:09:49,502 [Thread-2:11660] [django.request:228] [log:log_response] [WARNING]- Not Found: /p.html
+2018-12-22 07:49:46,108 [Thread-2:15484] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 07:53:07,592 [Thread-7:9992] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 07:56:12,235 [Thread-7:9992] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:00:45,820 [Thread-2:16492] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:01:15,496 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:01:31,611 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:02:15,377 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:02:23,249 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:02:33,312 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:02:44,878 [Thread-2:12456] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:03:46,214 [Thread-2:17068] [django.request:228] [log:log_response] [WARNING]- Not Found: /news.html
+2018-12-22 08:19:33,825 [Thread-2:13804] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:19:52,905 [Thread-2:8680] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 08:20:05,296 [Thread-2:8520] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 15:12:07,144 [Thread-20:10192] [django.request:228] [log:log_response] [WARNING]- Not Found: /ad/2018/12/活动时间.png
+2018-12-22 15:12:13,040 [Thread-20:10192] [django.request:228] [log:log_response] [WARNING]- Not Found: /ad/2018/12/活动时间.png
+2018-12-22 15:15:32,426 [Thread-20:10192] [django.request:228] [log:log_response] [WARNING]- Not Found: /uoloads/ad/2018/12/活动时间.png
+2018-12-22 15:28:50,025 [Thread-2:1556] [django.request:228] [log:log_response] [WARNING]- Not Found: /base.html
+2018-12-22 16:43:10,847 [Thread-2:6700] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:44:19,184 [Thread-2:10800] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:44:42,093 [Thread-2:10800] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:45:20,909 [Thread-2:1148] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:45:27,739 [Thread-2:1148] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:46:42,930 [Thread-2:16808] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 16:48:06,785 [Thread-2:16808] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 18:04:22,426 [Thread-2:13796] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 18:04:58,536 [Thread-2:13796] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 18:05:20,809 [Thread-2:13760] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 18:07:19,031 [Thread-2:13760] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 21:01:19,907 [Thread-2:17340] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /archive/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 65, in archive
+    return render(request,'archive.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+TypeError: 'NoneType' object is not iterable
+2018-12-22 21:04:28,060 [Thread-2:1804] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /archive/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 66, in archive
+    return render(request,'archive.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+TypeError: 'NoneType' object is not iterable
+2018-12-22 21:05:02,318 [Thread-2:1560] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /archive/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 66, in archive
+    return render(request,'archive.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+TypeError: 'NoneType' object is not iterable
+2018-12-22 21:06:43,149 [Thread-2:8084] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /archive/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 68, in archive
+    return render(request,'archive.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+TypeError: 'NoneType' object is not iterable
+2018-12-22 21:06:59,505 [Thread-2:8084] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_blog.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-22 22:04:31,696 [Thread-2:19228] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-22 22:07:21,959 [Thread-2:19228] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-22 22:09:25,491 [Thread-2:18860] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-22 22:09:39,031 [Thread-2:18860] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-22 22:09:42,858 [Thread-2:18860] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-22 22:10:15,759 [Thread-2:18860] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-23 09:19:03,430 [Thread-6:6464] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-23 09:19:16,024 [Thread-2:4352] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive/
+2018-12-23 09:20:14,475 [Thread-2:4352] [django.request:228] [log:log_response] [WARNING]- Not Found: /archive
+2018-12-23 09:20:18,388 [Thread-2:4352] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-12-23 09:20:21,384 [Thread-2:4352] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-12-23 09:20:23,712 [Thread-2:4352] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-12-24 06:30:23,159 [Thread-2:12704] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 93, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\python_env\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "D:\python_env\blog\lib\site-packages\django\urls\resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-12-24 07:35:35,103 [Thread-2:7820] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 115, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\python_env\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "D:\python_env\blog\lib\site-packages\django\urls\resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-12-24 07:43:09,375 [Thread-2:3204] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 117, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\python_env\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "D:\python_env\blog\lib\site-packages\django\urls\resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-12-24 07:43:42,308 [Thread-2:20804] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 117, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\python_env\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "D:\python_env\blog\lib\site-packages\django\urls\resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-12-24 07:45:29,523 [Thread-2:20804] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 117, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\python_env\blog\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "D:\python_env\blog\lib\site-packages\django\urls\resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2018-12-24 08:02:09,511 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:02:15,440 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:02:23,287 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:02:30,728 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:02:38,005 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:03:06,119 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
+2018-12-24 08:05:06,918 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/base.html

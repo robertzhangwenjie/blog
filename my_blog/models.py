@@ -1,3 +1,4 @@
+# coding:utf-8
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -9,7 +10,7 @@ class User(AbstractUser):
     avatar = models.ImageField(upload_to='avatar/%Y/%m', default='avatar/default.png', max_length=200, blank=True, null=True, verbose_name='用户头像')
     qq = models.CharField(max_length=20, blank=True, null=True, verbose_name='QQ号码')
     mobile = models.CharField(max_length=11, blank=True, null=True, unique=True, verbose_name='手机号码')
-
+    url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
     class Meta:
         verbose_name = '用户'
         verbose_name_plural = verbose_name
@@ -43,6 +44,18 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+# customize manager of Article
+class ArticleManager(models.Manager):
+    def distinct_date(self):
+        distinct_date_list = []
+        date_list = self.values('date_publish')
+        for date in date_list:
+            date = date['date_publish'].strftime('%Y{y}%m{m}').format(y='年',m='月')
+            if date not in distinct_date_list:
+                distinct_date_list.append(date)
+        return distinct_date_list
+
+
 # 文章模型
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
@@ -55,6 +68,7 @@ class Article(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL,blank=True, null=True, verbose_name='分类')
     tag = models.ManyToManyField(Tag, verbose_name='标签')
 
+    objects = ArticleManager()
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
@@ -66,6 +80,9 @@ class Article(models.Model):
 # 评论模型
 class Comment(models.Model):
     content = models.TextField(verbose_name='评论内容')
+    username = models.CharField(max_length=30, blank=True, null=True, verbose_name='用户名')
+    email = models.EmailField(max_length=50, blank=True, null=True, verbose_name='邮箱地址')
+    url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     user = models.ForeignKey(User, on_delete=models.SET_NULL,blank=True, null=True, verbose_name='用户')
     article = models.ForeignKey(Article, on_delete=models.SET_NULL,blank=True, null=True, verbose_name='文章')

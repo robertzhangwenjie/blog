@@ -4,3 +4,60 @@
 2018-12-19 09:50:59,067 [Thread-2:42680] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
 2018-12-19 16:04:11,152 [Thread-2:62240] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
 2018-12-20 05:57:46,459 [Thread-2:51968] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:18:31,348 [Thread-2:8764] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:34:37,936 [Thread-8:3036] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:35:19,005 [Thread-2:8320] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:48:59,166 [Thread-8:13372] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:50:20,553 [Thread-2:6112] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-21 08:53:55,346 [Thread-2:12464] [my_blog.views:20] [views:index] [ERROR]- [Errno 2] No such file or directory: './test'
+2018-12-22 07:49:45,684 [Thread-2:15484] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 07:53:07,004 [Thread-7:9992] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 07:56:11,844 [Thread-7:9992] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:00:45,440 [Thread-2:16492] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:01:15,091 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:01:31,270 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:02:14,962 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:02:22,821 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:02:32,900 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:02:44,569 [Thread-2:12456] [my_blog.views:38] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:19:33,426 [Thread-2:13804] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:19:52,565 [Thread-2:8680] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 08:20:04,971 [Thread-2:8520] [my_blog.views:37] [views:index] [ERROR]- 'QueryDict' object is not callable
+2018-12-22 16:43:10,656 [Thread-2:6700] [my_blog.views:49] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-12-22 16:44:18,992 [Thread-2:10800] [my_blog.views:49] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-12-22 16:44:41,921 [Thread-2:10800] [my_blog.views:49] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-12-22 16:45:20,670 [Thread-2:1148] [my_blog.views:49] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2018-12-22 16:45:27,566 [Thread-2:1148] [my_blog.views:49] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2018-12-22 16:46:42,745 [Thread-2:16808] [my_blog.views:49] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-12-22 16:48:06,535 [Thread-2:16808] [my_blog.views:49] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-12-22 18:04:22,275 [Thread-2:13796] [my_blog.views:48] [views:index] [ERROR]- Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-12-22 18:04:58,323 [Thread-2:13796] [my_blog.views:48] [views:index] [ERROR]- Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-12-22 18:05:20,675 [Thread-2:13760] [my_blog.views:48] [views:index] [ERROR]- Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-12-22 18:07:18,810 [Thread-2:13760] [my_blog.views:48] [views:index] [ERROR]- Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-12-22 21:06:58,621 [Thread-2:8084] [my_blog.views:49] [views:index] [ERROR]- 'NoneType' object is not iterable
+2018-12-23 10:14:21,977 [Thread-2:5604] [my_blog.views:55] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-12-23 10:16:03,664 [Thread-2:5604] [my_blog.views:55] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-12-23 10:16:35,619 [Thread-2:5604] [my_blog.views:55] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-12-24 07:35:34,289 [Thread-2:7820] [my_blog.views:114] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:43:08,511 [Thread-2:3204] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:43:41,370 [Thread-2:20804] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:45:28,598 [Thread-2:20804] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:47:10,232 [Thread-2:19504] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:47:46,364 [Thread-4:7292] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:48:02,744 [Thread-4:7292] [my_blog.views:116] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:54:57,679 [Thread-2:21472] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:55:18,816 [Thread-2:21472] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:57:00,984 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:59:06,657 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 07:59:15,547 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:02:05,194 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:03:00,636 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:04:06,388 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:06:16,096 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:06:28,194 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-24 08:06:54,492 [Thread-2:20012] [my_blog.views:118] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-25 08:31:07,702 [Thread-7:3816] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-25 08:33:04,784 [Thread-2:20288] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-25 08:34:00,862 [Thread-2:22740] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-25 08:36:57,246 [Thread-2:22016] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
+2018-12-25 08:37:11,137 [Thread-2:21696] [my_blog.views:117] [views:article] [ERROR]- 'bool' object is not callable
