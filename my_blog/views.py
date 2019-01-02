@@ -30,21 +30,30 @@ def global_settings(request):
 
     # 获取文章推荐排行
     article_list_recommend = Article.objects.filter(is_recommend=True)[:10]
-    return {
-        'category_list': category_list,
-        'ad_list': ad_list,
-        'archive_list':archive_list,
-        'SITE_NAME' : settings.SITE_NAME,
-        'SITE_DESC' : settings.SITE_DESC,
-        'WEIBO_SINA' : settings.WEIBO_SINA,
-        'WEIBO_TECENT' : settings.WEIBO_TECENT,
-        'PRO_RSS' : settings.PRO_RSS,
-        'PRO_EMAIL' : settings.PRO_EMAIL,
-        'MEDIA_URL' : settings.MEDIA_URL,
-        'article_list_comment':article_list_comment,
-        'article_list_click':article_list_click,
-        'article_list_recommend':article_list_recommend,
-            }
+    SITE_NAME= settings.SITE_NAME
+    SITE_DESC= settings.SITE_DESC
+    WEIBO_SINA= settings.WEIBO_SINA
+    WEIBO_TECENT= settings.WEIBO_TECENT
+    PRO_RSS=settings.PRO_RSS
+    PRO_EMAIL= settings.PRO_EMAIL
+    MEDIA_URL= settings.MEDIA_URL
+    SITE_URL = settings.SITE_URL
+    return locals()
+    # return {
+    #     'category_list': category_list,
+    #     'ad_list': ad_list,
+    #     'archive_list':archive_list,
+    #     'SITE_NAME' : settings.SITE_NAME,
+    #     'SITE_DESC' : settings.SITE_DESC,
+    #     'WEIBO_SINA' : settings.WEIBO_SINA,
+    #     'WEIBO_TECENT' : settings.WEIBO_TECENT,
+    #     'PRO_RSS' : settings.PRO_RSS,
+    #     'PRO_EMAIL' : settings.PRO_EMAIL,
+    #     'MEDIA_URL' : settings.MEDIA_URL,
+    #     'article_list_comment':article_list_comment,
+    #     'article_list_click':article_list_click,
+    #     'article_list_recommend':article_list_recommend,
+    #         }
 
 def index(request):
     try:

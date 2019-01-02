@@ -889,3 +889,10 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' 
 2018-12-24 08:02:38,005 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
 2018-12-24 08:03:06,119 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /css/reglogin.css
 2018-12-24 08:05:06,918 [Thread-2:20012] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/base.html
+2019-01-02 08:57:27,041 [Thread-5:21996] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-01-02 08:59:06,548 [Thread-7:19364] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/article/
+2019-01-02 09:03:34,016 [Thread-2:18652] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/www.hwenip.comarticle/
+2019-01-02 09:04:20,536 [Thread-2:10164] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/127.0.0.1/article/
+2019-01-02 09:04:35,638 [Thread-2:10164] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/127.0.0.1/article/
+2019-01-02 09:04:52,826 [Thread-2:10164] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/127.0.0.1/article/
+2019-01-02 09:09:53,183 [Thread-4:9908] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico

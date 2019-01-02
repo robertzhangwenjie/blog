@@ -143,7 +143,7 @@ WEIBO_SINA = 'https://weibo.com/u/2928960587/home'
 WEIBO_TECENT= 'https://weibo.com/u/2928960587/home'
 PRO_RSS = 'https://weibo.com/u/2928960587/home'
 PRO_EMAIL = 'robertzhangwenjie@gmail.com'
-SITE_URL = 'www.hwenip.com'
+SITE_URL = 'http://localhost:8000/'
 
 
 # https://docs.djangoproject.com/en/2.1/topics/logging/
