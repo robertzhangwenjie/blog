@@ -145,6 +145,9 @@ PRO_RSS = 'https://weibo.com/u/2928960587/home'
 PRO_EMAIL = 'robertzhangwenjie@gmail.com'
 SITE_URL = 'http://localhost:8000/'
 
+# 登录页面
+LOGIN_URL = '/login/'
+
 
 # https://docs.djangoproject.com/en/2.1/topics/logging/
 # 自定义日志输出信息

@@ -92,22 +92,22 @@ def getPage(request, query_set):
     return query_set
 
 # Details of article
+# 文章详情
 def article(request):
     try:
-        # get id of article
-        id = request.GET.get('id',None)
+        # 获取文章id
+        id = request.GET.get('id', None)
         try:
             # 获取文章信息
             article = Article.objects.get(pk=id)
         except Article.DoesNotExist:
-            return render(request,'failure.html',{'reason':'没有找到对应的文章'})
+            return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
 
         # 评论表单
         comment_form = CommentForm({'author': request.user.username,
                                     'email': request.user.email,
                                     'url': request.user.url,
-                                    'article': id} if request.user.is_authenticated() else {'article': id})
-        print(comment_form)
+                                    'article': id} if request.user.is_authenticated() else{'article': id})
         # 获取评论信息
         comments = Comment.objects.filter(article=article).order_by('id')
         comment_list = []
@@ -120,11 +120,10 @@ def article(request):
                     break
             if comment.pid is None:
                 comment_list.append(comment)
-
-
     except Exception as e:
+        print(e)
         logger.error(e)
-    return render(request,'article.html',locals())
+    return render(request, 'article.html', locals())
 
 
 # 提交评论
@@ -152,7 +151,7 @@ def do_logout(request):
     try:
         logout(request)
     except Exception as e:
-        print(e)
+        # print(e)
         logger.error(e)
     return redirect(request.META['HTTP_REFERER'])
 

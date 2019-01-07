@@ -68,3 +68,23 @@
 2019-01-02 09:04:16,484 [Thread-2:10164] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
 2019-01-02 09:09:46,790 [Thread-2:25388] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
 2019-01-02 09:09:51,395 [Thread-3:30688] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-02 20:30:02,886 [Thread-9:19316] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:18:39,435 [Thread-15:15708] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:25:10,407 [Thread-11:23204] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:29:25,951 [Thread-11:23204] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:29:30,361 [Thread-11:23204] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:30:00,450 [Thread-2:22856] [my_blog.views:126] [views:article] [ERROR]- (2006, "Can't connect to MySQL server on '39.105.63.52' (10060)")
+2019-01-03 08:30:08,148 [Thread-2:22856] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 08:48:25,526 [Thread-12:21260] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:00:14,788 [Thread-3:23172] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:00:20,803 [Thread-3:23172] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:05:50,536 [Thread-2:14784] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:06:19,499 [Thread-2:9792] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:08:24,171 [Thread-2:9792] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:08:30,036 [Thread-2:9792] [my_blog.views:126] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:11:40,790 [Thread-2:20776] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:21:46,536 [Thread-4:4956] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-03 09:23:58,260 [Thread-4:4956] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-05 10:33:30,304 [Thread-2:23392] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-05 10:40:17,438 [Thread-2:4236] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable
+2019-01-05 11:29:46,058 [Thread-2:4400] [my_blog.views:125] [views:article] [ERROR]- 'bool' object is not callable

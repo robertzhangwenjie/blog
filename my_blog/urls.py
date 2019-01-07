@@ -6,7 +6,9 @@
 # @Software :   PyCharm
 
 from django.conf.urls import url
-
+from django.contrib.auth.decorators import login_required
+from django.urls import path
+from django.contrib.auth import views as auth_views
 from my_blog.views import *
 urlpatterns = [
     url(r'^$',index,name='index'),

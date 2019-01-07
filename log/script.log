@@ -896,3 +896,230 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' 
 2019-01-02 09:04:35,638 [Thread-2:10164] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/127.0.0.1/article/
 2019-01-02 09:04:52,826 [Thread-2:10164] [django.request:228] [log:log_response] [WARNING]- Not Found: /article/127.0.0.1/article/
 2019-01-02 09:09:53,183 [Thread-4:9908] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-01-03 08:25:01,992 [Thread-2:24188] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2006, "Can't connect to MySQL server on '39.105.63.52' (10060)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 206, in do_login
+    return render(request, 'login.html', locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "d:\software\python\python36\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "D:\python_env\blog\lib\site-packages\django\template\context.py", line 246, in bind_template
+    updates.update(processor(self.request))
+  File "D:\django_project\blog\my_blog\views.py", line 22, in global_settings
+    archive_list = Article.objects.distinct_date()
+  File "D:\django_project\blog\my_blog\models.py", line 52, in distinct_date
+    for date in date_list:
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "D:\python_env\blog\lib\site-packages\django\db\models\sql\compiler.py", line 1017, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "D:\python_env\blog\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2006, "Can't connect to MySQL server on '39.105.63.52' (10060)")
+2019-01-03 08:30:01,982 [Thread-2:22856] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\blog\my_blog\views.py", line 127, in article
+    return render(request,'article.html',locals())
+  File "D:\python_env\blog\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\python_env\blog\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "D:\python_env\blog\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\django_project\blog\my_blog\templatetags\myfilter.py", line 27, in month_to_upper
+    }.get(str(key.month),None)
+AttributeError: 'str' object has no attribute 'month'
+2019-01-03 08:49:01,003 [Thread-11:28092] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/my_blog/article/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2006, "Can't connect to MySQL server on '39.105.63.52' (10060)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\blog\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\django\contrib\admin\sites.py", line 212, in inner
+    if not self.has_permission(request):
+  File "D:\python_env\blog\lib\site-packages\django\contrib\admin\sites.py", line 186, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "D:\python_env\blog\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "D:\python_env\blog\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "D:\python_env\blog\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "D:\python_env\blog\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "D:\python_env\blog\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "D:\python_env\blog\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "D:\python_env\blog\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "D:\python_env\blog\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "D:\python_env\blog\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "D:\python_env\blog\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "D:\python_env\blog\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\python_env\blog\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\python_env\blog\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\python_env\blog\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python_env\blog\lib\site-packages\MySQLdb\connections.py", line 208, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2006, "Can't connect to MySQL server on '39.105.63.52' (10060)")
+2019-01-05 10:33:34,290 [Thread-3:13460] [django.request:228] [log:log_response] [WARNING]- Not Found: /accounts/login/
+2019-01-05 10:38:26,845 [Thread-3:14084] [django.request:228] [log:log_response] [WARNING]- Not Found: /accounts/login/
+2019-01-05 10:38:46,942 [Thread-2:1528] [django.request:228] [log:log_response] [WARNING]- Not Found: /accounts/login/
+2019-01-05 10:39:33,216 [Thread-2:13556] [django.request:228] [log:log_response] [WARNING]- Not Found: /accounts/login/
+2019-01-05 11:31:27,466 [Thread-2:26228] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\blog\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "D:\python_env\blog\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "D:\python_env\blog\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\python_env\blog\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\python_env\blog\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html

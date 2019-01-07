@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import *
 
 # Register your models here.
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('article','user','pid')
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name','index')
 class ArticleAdmin(admin.ModelAdmin):
@@ -41,6 +43,6 @@ admin.site.register(User)
 admin.site.register(Tag)
 admin.site.register(Ad)
 admin.site.register(Category,CategoryAdmin)
-admin.site.register(Comment)
+admin.site.register(Comment,CommentAdmin)
 admin.site.register(Links)
 admin.site.register(Article,ArticleAdmin)
